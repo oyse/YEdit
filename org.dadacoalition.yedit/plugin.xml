@@ -151,12 +151,13 @@
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="M1+/">
       </key>
-      <key
+      <!--#13  source format removes all comments -->
+      <!--<key
             commandId="org.dadacoalition.yedit.command.formatDocument"
             contextId="org.dadacoalition.yedit.yeditScope"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="M1+M2+F">
-      </key>
+      </key>-->
    </extension>
    <extension
          point="org.eclipse.ui.contexts">
