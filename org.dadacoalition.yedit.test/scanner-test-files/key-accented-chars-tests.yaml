@@ -1,0 +1,41 @@
+---
+name: Parsing keys with accented characters
+contentFile: key-accented-chars.yaml
+rangeLength: -1
+startOffset: 0
+expectedTokens:
+
+  - type: DOCUMENT_START
+  
+  # Poèmes
+  - type: WHITESPACE
+  - type: KEY
+  
+  # Poème1
+  - type: WHITESPACE
+  - type: KEY
+ 
+  - type: WHITESPACE
+  - type: KEY
+  - type: WHITESPACE
+  - type: SCALAR
+  
+  - type: WHITESPACE
+  - type: KEY
+  - type: WHITESPACE
+  - type: SCALAR
+
+  - type: WHITESPACE
+  - type: KEY
+  - type: WHITESPACE
+  - type: SCALAR
+
+  # Prop2
+  - type: WHITESPACE
+  - type: KEY
+ 
+  - type: WHITESPACE
+  - type: KEY
+  - type: WHITESPACE
+  - type: SCALAR
+
