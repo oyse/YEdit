@@ -23,12 +23,12 @@ import org.eclipse.jface.text.rules.Token;
  */
 public class KeyRule implements IRule {
 
-    private IToken token;
+    private IToken token; 
     private Pattern keyPattern;
     
     public KeyRule( IToken token ){
         this.token = token;
-        keyPattern = Pattern.compile( getKeyRegex(), Pattern.DOTALL | Pattern.COMMENTS );
+        keyPattern = Pattern.compile( getKeyRegex(), Pattern.DOTALL | Pattern.COMMENTS | Pattern.UNICODE_CHARACTER_CLASS);
     }
         
     public IToken evaluate(ICharacterScanner scanner) {
